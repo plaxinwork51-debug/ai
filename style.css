@@ -242,3 +242,17 @@ h3{font-size:17px;font-weight:700;line-height:1.3}
 .tile.vid::after{content:"";position:absolute;right:8px;bottom:8px;width:34px;height:34px;border-radius:50%;background:rgba(8,9,12,.72) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23fff'%3E%3Cpath d='M8 5v14l11-7z'/%3E%3C/svg%3E") center/18px no-repeat;pointer-events:none}
 .lb-f video{max-width:100%;max-height:calc(100svh - 90px);border-radius:8px;background:#000}
 .what{margin-top:12px;font-size:15px;color:#E6EAF0;font-weight:700}
+
+.cond{list-style:none;display:grid;gap:10px}
+.cond li{background:var(--surface);border-radius:var(--radius);padding:14px 16px;display:flex;flex-direction:column;gap:3px}
+.cond b{font-size:16px}.cond span{color:var(--muted);font-size:15px}
+.brands{list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+.brands li{padding:10px 16px;border-radius:999px;border:1px solid var(--line);font-family:var(--head);font-size:14px;color:#E6EAF0}
+.cases{list-style:none;display:grid;gap:10px}
+.cases li{background:var(--surface);border-radius:var(--radius);padding:16px 18px}
+.cases b{font-family:var(--head);font-size:17px;display:block}
+.cases .sub{display:block;font-size:13px;color:var(--accent);margin:4px 0 8px}
+.cases p{color:#D5DAE3;font-size:15px}
+.dir2.wide{grid-column:1/-1;aspect-ratio:16/9}
+.dir2.wide img{object-position:50% 25%}
+@media (min-width:720px){.cond{grid-template-columns:repeat(3,minmax(0,1fr))}.cases{grid-template-columns:1fr 1fr}.dir2.wide{aspect-ratio:21/8}}
